@@ -2,6 +2,7 @@ package com.example.demo.config;
 
 import com.example.demo.endpoint.HelloService;
 import com.example.demo.endpoint.ReverseService;
+import com.example.demo.endpoint.CloseWindow;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.springframework.context.annotation.Configuration;
 
@@ -12,5 +13,6 @@ public class JerseyConfig extends ResourceConfig {
         
         register(HelloService.class);
         register(ReverseService.class);
+        register(CloseWindow.class);
     }
 }
